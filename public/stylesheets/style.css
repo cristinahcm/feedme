@@ -1,0 +1,549 @@
+.navbar-brand {
+  width: 50px;
+  background-color:white;
+  height: 40px;
+  padding-top: 1px;
+}
+
+.p {
+  width: 100px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-top: 10%;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.logo {
+  height:40px;
+}
+.welcome-form{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-title {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 35px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+
+.welcome-name {
+  display:flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.text-name {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+}
+
+.arrow {
+  height:30px;
+  padding-left:10px;
+}
+
+
+.form{
+  margin: 20px 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 35px auto;
+  grid-column-gap: 15px;
+}
+
+.input{
+padding-left: 10px;
+}
+
+
+
+.shoplist-items{
+  padding: 15px;
+  color:black;
+  list-style:none;
+  font-size: 25px;
+}
+
+
+.done{
+  text-decoration: line-through;
+  color: black;
+}
+
+
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.navbar-toggler{
+  border-color: black;
+}
+
+.login-form{
+  margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-login{
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 35px;
+}
+
+.usernamelogin{
+  padding-bottom: 10px;
+}
+
+.username-login{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+}
+
+.passwordlogin{
+  padding-bottom: 20px;
+}
+
+.password-login{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+}
+
+
+.button-login {
+  background-color:black;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  color:white;
+  font-size: 15px;
+  border-style: none;
+}
+
+
+.signup-form{
+  margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-signup{
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 35px;
+}
+
+.usernamesignup{
+  padding-bottom: 10px;
+}
+
+.username-signup{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+}
+
+.passwordsignup{
+  padding-bottom: 20px;
+}
+
+.password-signup{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+}
+
+
+.button-signup {
+  background-color:black;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  color:white;
+  font-size: 15px;
+  border-style: none;
+}
+
+.signuplogin {
+  padding-top:30px;
+}
+
+.signup-login {
+  color: #8A8A8B;
+}
+
+.loginsignup {
+  padding-top:30px;
+}
+
+.login-signup {
+  color: #8A8A8B;
+}
+
+.food-list{
+  margin-top: 8%;
+  margin-left: 8;
+  display: flex;
+  justify-content: space-around;
+  list-style:none;
+}
+
+.food-list h3{
+  margin-left: 20px;
+}
+
+
+.food-create{
+  margin-left: 43%;
+  border-radius: 20%;
+}
+
+.foodType-list{
+  display: flex;
+}
+
+.foodType-list li>a {
+  color: black;
+}
+
+.delete-button{
+  padding-bottom: 25px;
+  margin-left: 10;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  background-color: white;
+}
+
+.shopping-list{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top:100px;
+}
+
+h3 {
+  font-size:20px;
+}
+
+a.food-create.btn.btn-dark {
+  background-color:black;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  color:white;
+  font-size: 15px;
+  border-style: none;
+}
+
+.form-control {
+  padding-right: 100px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+}
+
+.formcontrol {
+  padding-bottom: 10px;
+}
+
+.expire-date {
+  padding-right: 50px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border:none;
+}
+
+.quantity-food {
+  padding-right: 50px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border:none;
+}
+
+.price-food {
+  padding-right: 50px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border:none;
+}
+
+
+.alert-message{
+  padding:8px;
+border: 1px solid #707070;
+  width:20%;
+  border-radius: 8px;
+  text-align: center;
+  border-color:red;
+}
+
+.form-select {
+  padding-right: 100px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+  color: #757779;
+}
+
+.container-create-food {
+  margin-top: 100px;
+}
+
+.title-h2 {
+  font-size:22px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.create-buttons {
+  padding-top: 20px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.create-button {
+  background-color:black;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  color:white;
+  font-size: 15px;
+  border-style: none;
+}
+
+ .add-item {
+  margin-top: 100px;
+} 
+
+.item-shop {
+  justify-content: center;
+}
+
+.item-name {
+  text-align: center;
+}
+
+
+.shopform{
+  display: flex;
+   justify-content: center;
+}
+
+.add-button {
+  margin-left: 10;
+  display: block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+  background-color: white;
+}
+
+.icon-profile {
+  height:100px;
+  width:100px;
+}
+
+.itemsShop{
+  display: flex;
+
+}
+
+.pages-profile {
+  margin-top: 100px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.title-profile {
+  padding-top:20px;
+}
+
+.a {
+  color: black;
+}
+
+.pages {
+  display:flex;
+  justify-content:space-around;
+}
+
+.info {
+margin-top: 20px;
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+align-items: center;
+}
+
+.hidden alert-message {
+  display:flex;
+}
+
+
+.card-img-top{
+  width: 80%;
+}
+.card{
+  margin-left: 40%;
+
+}
+
+h6 {
+  font-weight: 300;
+}
+
+.my-information {
+  margin-top: 50px;
+  display: flex;
+  flex-direction:column;
+}
+
+.details{
+  margin-top:8%;
+  display:flex;
+  justify-content: center;
+}
+
+.h3-info {
+  display:flex;
+  justify-content: center;
+}
+
+.recipeList{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.stylelist{
+ list-style:none;
+}
+
+.itemsShop{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.itemsShop button, a{
+  margin-top: 20px;
+}
+
+.missedItems{
+  list-style:none;
+}
+
+.buttonAdd {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100px;
+  height:30px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 45%;
+}
+
+.buttonAdd span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonAdd span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonAdd:hover span {
+  padding-right: 25px;
+}
+
+.buttonAdd:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.recipesButtons{
+display: flex;
+justify-content: center;
+
+}

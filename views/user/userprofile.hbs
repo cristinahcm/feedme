@@ -1,0 +1,56 @@
+  {{> navbar}}
+<div class="pages">
+<div class="pages-profile">
+  <div>
+    <img src="/images/fridge.svg" alt="fridge icon" class="icon-profile"> 
+  </div>
+  <div class="title-profile">
+    <a href="/foods" class="a">Whats on my fridge</a>
+  </div>
+</div>
+
+<div class="pages-profile">
+  <div>
+    <img src="/images/Recurso 3.svg" alt="shopping bag" class="icon-profile"> 
+  </div>
+  <div class="title-profile">
+    <a href="/shoplist/food-shopList" class="a">Shopping list</a>
+  </div>
+</div>
+
+<div class="pages-profile">
+  <div>
+    <img src="/images/recipes.svg" alt="shopping bag" class="icon-profile"> 
+  </div>
+  <div class="title-profile">
+    <a href="/foods/recipes" class="a">Check some recipes</a>
+  </div>
+</div>
+
+</div>
+
+<div class="my-information">
+  <h3 class="h3-info">My info</h3>
+  <hr>
+    <div class="info"> 
+      <div class="items-info">
+          <h6>Individual items: <span class="items-amount">{{totalItems}}</span></h6>
+          <h6>Total: <span class="total">{{total}}</span> </h6>
+          <h6>€ Spent in food: <span class="cost">${{moneySpend}}</span> </h6>
+      </div>
+
+
+      <div class="hidden alert-message">
+          <h6>You are running out of food.</h6><br>
+          <h6>Go to the Store!</h6>
+      </div>
+    </div>
+
+</div>
+
+{{!-- <div>
+  <canvas id="myChart"> </canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> --}}
+

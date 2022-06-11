@@ -1,0 +1,24 @@
+
+ <h1 class="details">Check Some Recipes:</h1>
+ <div class="recipeList"> 
+{{#each data}}
+<div>
+<div class=" card" style="width: 18rem;">
+  <img class="card-img-top" src="{{ this.image }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    {{#each this.missedIngredients }}
+            <li class="missedItems"> {{ this.name }}</li>
+        {{/each}}
+  </ul>
+  
+</div>
+</div>
+{{/each}}
+ </div>
+ <div class="recipesButtons">
+ <a  href="/user/userprofile" class="btn btn-dark">Go Back</a>
+    <a href="/foods/{{this._id}}/edit" class="btn btn-dark">Edit</a>
+    </div>

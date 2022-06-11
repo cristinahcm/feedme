@@ -1,0 +1,85 @@
+<div class="container-create-food">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <form action="/foods/food-create" method="POST">
+        <h2 class="title-h2">Create Item</h2>
+        <div class="formcontrol">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Name"
+            id="name"
+            name="name"
+          />
+        </div>
+        <div class="formcontrol">
+          <select name="category" class="form-select" id="category">
+            <option selected>Choose a category</option>
+            <option value="Meat">Meat</option>
+            <option value="Vegetable">Vegetable</option>
+            <option value="Fruit">Fruit</option>
+            <option value="Sweets">Sweets</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="formcontrol">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Image Link"
+            id="imageUrl"
+            name="imageUrl"
+          />
+        </div>
+
+        <div class="formcontrol">
+          <label for="expiredate" class="form-label">Expiration Date:</label>
+          <input
+            type="date"
+            class="expire-date"
+            placeholder="Expiration Date"
+            id="expireDate"
+            name="expireDate"
+          />
+        </div>
+        <div class="formcontrol">
+          <label for="quantity" class="form-label">Amount:</label>
+          <input
+            type="number"
+            class="quantity-food"
+            placeholder="1"
+            id="quantity"
+            name="quantity"
+          />
+        </div>
+        <div class="formcontrol">
+          <label for="cost" class="form-label">Price:</label>
+          <input
+            type="number"
+            class="price-food"
+            placeholder="€"
+            id="cost"
+            name="cost"
+          />
+        </div>
+        <div class="formcontrol">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Notes"
+            id="note"
+            name="note"
+          />
+        </div>
+        <div class="create-buttons">
+          <a href="/foods" class="login-signup">Go back</a>
+          <button type="submit" class="create-button">Create new item</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

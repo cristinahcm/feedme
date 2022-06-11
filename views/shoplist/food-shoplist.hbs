@@ -1,0 +1,72 @@
+  {{> navbar}}
+  <div class="add-item">
+    <div class="row justify-content-center">
+      <form action="/shoplist/food-shoplist" method="POST">
+     <div class="shopform">
+      <div class="item">
+          <input type="text" class="form-control" placeholder="Add New item" id="name" name="name">
+      </div>
+         <div class="hidden">
+          <label for="category">Choose a category:</label>
+          <select name="category" id="category" multiple>
+            <option value="Meat">Meat</option>
+            <option value="Vegetable">Vegetable</option>
+            <option value="Fruit">Fruit</option>
+            <option value="Sweets">Sweets</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="hidden" class="mb-3">
+          <label for="imageUrl" class="form-label">Image Link</label>
+          <input type="text" class="form-control" id="imageUrl" name="imageUrl">
+        </div>
+        <div class="hidden" class="mb-3">
+          <label for="expireDate" class="form-label">Expiration date</label>
+          <input type="date" class="form-control" id="expireDate"
+            name="expireDate">
+        </div>
+        <div class="hidden" class="mb-3">
+          <label for="quantity" class="form-label">Amount</label>
+          <input type="number" class="form-control" id="quantity"
+            name="quantity">
+        </div>
+        <div class="hidden">
+          <label  for="note" class="form-label">Add some comment</label>
+          <input type="text" class="form-control" id="note" name="note">
+        </div> 
+          <button type="submit" class="add-button">+</button>
+       </div>
+      </form>
+</div>
+</div>
+
+<div class="shopping-list">
+        <div>
+        <h1>Shopping List</h1>
+    <ul class="shopList"> 
+    {{#each shopList}}
+    <div class="itemsShop"> 
+    <li class="shoplist-items">{{this.name}}</li>
+      <form action="/shoplist/{{this._id}}/delete" method="post">
+      <button class="delete-button" type="submit">-</button>
+    </form>
+     <a href="/foods/{{this._id}}/edit" class="delete-button">></a>
+     </div>
+{{/each }}
+</ul>
+</div>
+
+ <div class="suggestions">  
+ <h1>You are running out of:</h1>
+<ul>
+{{#each shopListSugestion}}
+<li>{{this.name}}</li>
+{{/each }}
+</ul>
+</div>
+
+</div>
+
+

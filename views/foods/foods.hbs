@@ -1,0 +1,94 @@
+  {{> navbar}}
+
+<div class="food-list"> 
+<div><h3>Meat</h3>
+<ul class="stylelist" >
+   {{#each meats}}
+   <div  class="foodType-list"> 
+<li  class="ff"> <a href="/foods/{{this._id}}">{{this.name}}: {{this.quantity}}</a></li>
+ <form action="/foods/{{this._id}}/delete" method="post">
+      <button class="delete-button" type="submit">x</button>
+    </form>
+    </div>
+   {{/each}}
+</ul>
+</div>
+<div><h3>Vegetables</h3>
+<ul>
+ {{#each vegetables}}
+ <div class="foodType-list">
+<li class="stylelist"> <a href="/foods/{{this._id}}">{{this.name}}: {{this.quantity}}</a></li>
+<form action="/foods/{{this._id}}/delete" method="post">
+      <button class="delete-button" type="submit">x</button>
+    </form>
+  </div>
+   {{/each}}
+</ul>
+</div>
+<div><h3>Fruit</h3>
+<ul>
+ {{#each fruits}}
+ <div  class="foodType-list">
+<li> <a href="/foods/{{this._id}}">{{this.name}}: {{this.quantity}}</a></li>
+<form action="/foods/{{this._id}}/delete" method="post">
+      <button class="delete-button" type="submit">x</button>
+    </form>
+  </div>
+   {{/each}}
+</ul>
+   </div>
+<div><h3>Sweets</h3>
+ {{#each sweets}}
+ <div class="foodType-list">
+<li> <a href="/foods/{{this._id}}">{{this.name}}: {{this.quantity}}</a></li>
+<form action="/foods/{{this._id}}/delete" method="post">
+      <button class="delete-button" type="submit">x</button>
+    </form>
+  </div>
+   {{/each}}
+   </div>
+   <div><h3>Drinks</h3>
+ {{#each drinks}}
+ <div class="foodType-list">
+<li> <a href="/foods/{{this._id}}">{{this.name}}: {{this.quantity}}</a></li>
+<form action="/foods/{{this._id}}/delete" method="post">
+      <button class="delete-button" type="submit">x</button>
+    </form>
+  </div>
+   {{/each}}
+   </div>
+<div><h3>Other</h3>
+ {{#each others}}
+ <div class="foodType-list"> 
+<li> <a href="/foods/{{this._id}}">{{this.name}}: {{this.quantity}}</a></li>
+<form  action="/foods/{{this._id}}/delete" method="post">
+      <button class=" delete-button" type="submit">x</button>
+    </form>
+  </div>
+   {{/each}}
+</div>
+</div>
+<form action="/foods/food-create">
+<button class="buttonAdd"><span>Add Food</span></button>
+</form>
+
+   {{!-- <h2>Available Food</h2>
+<div>
+    {{#each foods}}
+    <a href="/foods/{{this._id}}">{{this.name}}</a>
+    <p>Category: {{this.category}}</p>
+    <a href="/foods/{{this._id}}/edit" class="btn btn-primary">Edit</a>
+    <form action="/foods/{{this._id}}/delete" method="post">
+      <button class="btn btn-danger" type="submit">Delete Item</button>
+    </form>
+    {{/each}}
+
+    <div class="message">Running out of food, go to the store</div>
+
+    <h5>TOTAL:</h5><span class="total">{{total}}</span> 
+    <h5>TOTAL ITEMS:</h5><span class="items-amount">{{totalItems}}</span>
+  
+</div>
+
+<div></div>
+<a href="/foods/food-create" class="btn btn-dark">Create Food</a> --}}
